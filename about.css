@@ -1,0 +1,122 @@
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('images/about.png');
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #5C4874;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    }
+.logo{
+    font-size: 1.0cm;
+    color:#F9F3CC;
+    user-select: none;
+}
+.navigation a {
+    position: relative;
+    font-size: .5cm;
+    color: #F9F3CC;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+.navigation a::after{
+   content: " ";
+   position: absolute;
+   left: 0;
+   bottom: -6px;
+   width: 100%;
+   height: 3px;
+   background: #F9F3CC;
+   border-radius: 5px;
+   transform-origin: right;
+   transform: scaleX(0);
+   transition: transform .5s;
+}
+.navigation a:hover:after{
+    transform-origin: left;
+    transform: scaleX(1);
+
+}
+.navigation .btnLogout {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #F9F3CC;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: .5cm;
+    color: #F9F3CC;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navigation .btnLogout:hover {
+    background: #F9F3CC;
+    color: burlywood;
+}
+/*end navbar*/
+.align{
+    display: flex;
+    position: absolute;
+    margin-left: -600px;
+}
+.maincontent{
+    position: relative;
+    width: 450px;
+    height: 480px;
+    background: transparent;
+    border: 2px solid #F9F3CC;
+    border-radius: 10px;
+    backdrop-filter:blur(20px);
+    box-shadow: 0 0 30px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-content h1{
+    padding-bottom: 10px;
+    font-size: 1cm;
+    color: black;
+    text-align: center;
+}
+.intro-content p{
+    padding: 10px 20px ;
+    font-size: 0.4cm;
+    font-weight: 100;
+    color: black;
+    text-align: center;
+}
+.details-content {
+    padding: 50px 20px ;
+    font-size: 0.4cm;
+    font-weight: 100;
+    color: black;
+    text-align: center;
+}
+span{
+    padding: 50px 42px ;
+    text-align: center;
+    font-size: smaller;
+    color: rgb(36, 35, 35);
+}
